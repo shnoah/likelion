@@ -8,9 +8,7 @@
 
 - 상세페이지
      - 글 수정/삭제
-     
      - 리플 추가/수정/삭제
-
      - 이미지 업로드 : Carrierwave 사용
           - shnoah AWS 개인계정으로 업로드
           - https://github.com/carrierwaveuploader/carrierwave
@@ -18,6 +16,7 @@
 - 로그인 
      - devise 사용 https://github.com/plataformatec/devise
 - DB
+<<<<<<< HEAD
      - Post
           t.string :post_name #ID
           t.string :post_pwd #PW
