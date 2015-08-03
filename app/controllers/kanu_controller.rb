@@ -116,6 +116,24 @@ class KanuController < ApplicationController
     
     end
 
+
+#글 삭제시 사용    
+     def pw_chk       
+        @flag=0
+        @this_post = Post.find(params[:id])  
+        match = params[:new_pwd]
+        
+        if (@this_post.post_pwd==match)
+            @flag=1
+           
+            @this_post.destroy
+            redirect_to '/'       
+        else
+            @flag = 0      
+        end          
+    end
+    
+
           
         
 =begin        

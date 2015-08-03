@@ -16,16 +16,16 @@
 - 로그인 
      - devise 사용 https://github.com/plataformatec/devise
 - DB
-<<<<<<< HEAD
+
      - Post
-          t.string :post_name #ID
-          t.string :post_pwd #PW
-          t.string :post_title #제목(서비스명)
-          t.string :post_short_content #한줄설명
-          t.text :post_content #상세설명
-          t.string :my_image #이미지 첨부
-          t.string :post_contact #연락처
-          t.string :post_tag #태그
+          - t.string :post_name #ID
+          - t.string :post_pwd #PW
+          - t.string :post_title #제목(서비스명)
+          - t.string :post_short_content #한줄설명
+          - t.text :post_content #상세설명
+          - t.string :my_image #이미지 첨부
+          - t.string :post_contact #연락처
+          - t.string :post_tag #태그
           
      - Reply : post_id, content
      - User : devise 기본
