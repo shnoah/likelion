@@ -1,0 +1,14 @@
+
+
+
+로그인
+
+<p><font color=red><strong><%= flash[:alert] %></strong></font></p><br>
+<form action="/kanu/login_process" method="POST">
+    id : <input type="text" name="username">
+    pw : <input type="password" name="password">
+    <input type="submit" value="login">
+</form>
+
+<a href="/kanu/join">가입하기</a>
+<a href="/">메인가기</a>

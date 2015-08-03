@@ -1,0 +1,12 @@
+<center>
+
+<div style="height:50px; background-color:#FAFAFA;"  >
+
+<% if session[:user_id].nil? %>
+    <br><a href="/kanu/login/">로그인</a> <a href="/kanu/join">가입하기</a>
+<% else %>
+    <br><%= @username %>님 환영합니다. <a href="/kanu/logout/">로그아웃</a><br>
+<% end %>
+
+</div>
+</center>

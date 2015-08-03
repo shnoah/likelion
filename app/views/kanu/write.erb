@@ -1,0 +1,89 @@
+  <div class="container">
+    <h4>  
+      
+- 제출기한은 8월 23일까지입니다.<br>
+- 서비스명, 한 줄 설명, 상세 설명을 작성합니다. <br>
+- 이미지 파일을 첨부합니다. 메인화면 캡처 이미지나 손으로 그린  그림의 촬영본 모두 괜찮습니다.<br>
+- 아이디어 제출 시 필요한 개인정보는 이름, 카카오톡 아이디, 이메 일 주소입니다. <br>
+  등록한 연락처로 팀빌딩과 관련한 연락을 주고받을  수 있습니다. <br>
+- 최대 3개의 태그를 등록할 수 있습니다. 태그는 아이디어 검색에  사용됩니다.<br><br>
+  </h4>
+  </div>
+
+
+<div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8">
+      <form class="form-horizontal" action="/kanu/write_process" method="POST" enctype="multipart/form-data">
+          <fieldset>
+            <legend>등록페이지</legend>
+            
+
+     
+            
+            <div class="form-group">
+              <label for="inputEmail" class="col-lg-2 control-label">ID</label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control" name="a_name" placeholder="ID" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="inputEmail" class="col-lg-2 control-label">Password</label>
+              <div class="col-lg-10">
+                <input type="password" class="form-control" name="password" placeholder="Password" required>
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <label for="inputEmail" class="col-lg-2 control-label">제목</label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control"  name="title" placeholder="제목" required>
+              </div>
+            </div>
+
+            
+            <div class="form-group">
+              <label for="textArea" class="col-lg-2 control-label">서비스 소개</label>
+              <div class="col-lg-10">
+                <textarea class="form-control" rows="3"  name="content" required></textarea>
+                <span class="help-block">도움말이 들어가는 부분</span>
+              </div>
+            </div>
+
+          <div class="form-group">
+              <label for="inputEmail" class="col-lg-2 control-label">이미지 첨부</label>
+              <div class="col-lg-10">
+              <input type=file name="image_file">
+               </div>
+            </div>
+            
+          <div class="form-group">
+              <label for="inputEmail" class="col-lg-2 control-label">팀명/팀원/연락처</label>
+              <div class="col-lg-10">
+                
+                <input type="text" class="form-control"  name="team" placeholder="팀명/팀원/연락처(미구현)" required>
+              </div>
+            </div>
+
+          <div class="form-group">
+              <label for="inputEmail" class="col-lg-2 control-label">태그</label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control"  name="tag" placeholder="#맞팔#소통 금지 (미구현)" required>
+              </div>
+            </div>           
+        
+            <div class="form-group">
+              <div class="col-lg-10 col-lg-offset-2">
+                <a href="/" class="btn btn-default" role="button">메인으로</a>
+                <button type="reset" class="btn btn-default">Reset</button>
+                <button type="submit" class="btn btn-primary">등록</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+    </div>
+    <div class="col-lg-2"></div>
+</div>    
+ 
