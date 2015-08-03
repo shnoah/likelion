@@ -14,16 +14,18 @@
 ActiveRecord::Schema.define(version: 20150803060015) do
 
   create_table "posts", force: :cascade do |t|
-    t.string   "post_title"
     t.integer  "hits"
     t.integer  "like"
     t.string   "post_name"
     t.string   "post_pwd"
+    t.string   "post_title"
+    t.string   "post_short_content"
     t.text     "post_content"
     t.string   "my_image"
-    t.string   "star"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.string   "post_contact"
+    t.string   "post_tag"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
   end
 
   create_table "replies", force: :cascade do |t|

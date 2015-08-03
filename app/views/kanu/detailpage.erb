@@ -2,11 +2,22 @@
       <div class="jumbotron">
 <!-- 본문 -->   
         <h1><%= @this_post.post_title %></h1>
-        <p class="lead"><%= @this_post.post_content %></p>
-       
+        <p></p>
+        <div class="alert alert-dismissible alert-info">
+<!-- 한줄 설명 --> 
+            <%= @this_post.post_short_content %>
+        </div>
+<!-- 상세 설명 -->         
+        <p><%= @this_post.post_content %></p>
+<!-- 이미지 -->         
         <p><center><img class="img-responsive" src="<%= @this_post.my_image.url %>"></center></p>
-        
-        <p align="right"><%= @this_post.created_at.in_time_zone("Seoul")%><p>
+<!-- 연락처 -->
+        <p align="left">연락처 : <%= @this_post.post_contact %></p>
+<!-- 태그 -->
+        <p align="left"><strong><%= @this_post.post_tag %></strong></p>
+
+<!-- 포스팅 시간 -->  
+        <p align="right">최종 수정 : <%= @this_post.updated_at.in_time_zone("Seoul")%><p>
      
 <!-- 댓글 입력 -->      
         <form action = "/kanu/write_reply/" method="POST">
